@@ -1,0 +1,13 @@
+django-admin startproject store
+django-admin startapp storeApp
+manage.py makemigrations
+manage.py migrate
+manage.py runserver
+
+superuser:
+Username: jesus
+Email address: igorlende@gmail.com
+Password: 123asdASD
+
+dimon
+123asdASD
