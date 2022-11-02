@@ -1,0 +1,9 @@
+1) install python 3.9
+2) install postgresql 13, and backup database
+3) cd to path with directory with Server
+4) create virtual env: python -m venv venv
+5) activate env: venv\Scripts\activate
+6) install dependencies: pip install -r /requirements.txt
+7) change in DATABASES 'USER' and 'PASSWORD' in file Server\store\store\settings.py
+8) cd to directory with manage.py
+9) manage.py runserver
