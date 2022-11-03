@@ -1,0 +1,14 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.icon {
+  background-color: white;
+}
+
+.navbar-menu-items {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
