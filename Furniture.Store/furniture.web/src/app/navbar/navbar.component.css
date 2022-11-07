@@ -4,6 +4,7 @@
 
 .icon {
   background-color: white;
+  display: none;
 }
 
 .navbar-menu-items {

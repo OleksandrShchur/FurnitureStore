@@ -1,7 +1,7 @@
 # FurnitureStore
 
 ## Setup Database
-- install postgresql 13 or higher, and restore database (db name - furniture_store)
+- install postgresql 13 or above, and restore database (db name - furniture_store)
 
 ## Setup and run server
 - install python 3.9 
@@ -15,6 +15,7 @@
 - the server is running on http://127.0.0.1:8000/
 
 ## Setup and run Angular App
+- install Node.js version 14 or above
 - cd to folder Furniture.Store\furniture.web
 - run *npm i*
 - run *ng serve* or *ng serve --watch*
