@@ -1,0 +1,96 @@
+#btmFooter {
+  align-self: flex-end;
+}
+
+footer {
+  background-color: #ddd;
+  border-top: 1px solid #bbb;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .rm-footer {
+    padding: 30px 0;
+  }
+}
+
+.rm-footer {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 15px rgb(0 0 0 / 6%);
+  border-top: 1px solid #f9f9fc;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 540px;
+  }
+}
+
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center !important;
+}
+/* 
+@media (min-width: 768px) {
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+} */
+
+.rm-footer-title {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.rm-footer-phones {
+  margin: 10px 0 5px;
+  font-size: 14px;
+}
+
+.rm-footer-phones,
+.rm-footer-links-list a {
+  color: rgb(101, 108, 125);
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.align-items-center {
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+.justify-content-center {
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
