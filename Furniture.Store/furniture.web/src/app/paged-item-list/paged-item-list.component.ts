@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit, ViewChild } from '@angular/core';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatTableDataSource } from '@angular/material/table';
+import { Observable } from 'rxjs';
+import { ItemInfo } from 'src/models/itemInfo';
 
 @Component({
   selector: 'app-paged-item-list',
@@ -6,119 +10,138 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./paged-item-list.component.css'],
 })
 export class PagedItemListComponent implements OnInit {
-  members: { title: string; subtitle: string; content: string; url: string }[] =
-    [
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
-      },
-    ];
+  @ViewChild(MatPaginator) paginator: MatPaginator | undefined;
+  obs: Observable<any> | undefined;
 
-  constructor() {}
+  items: ItemInfo[] = [
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+  ];
 
-  ngOnInit(): void {}
+  dataSource: MatTableDataSource<ItemInfo> = new MatTableDataSource<ItemInfo>(
+    this.items
+  );
+
+  constructor(private changeDetectorRef: ChangeDetectorRef) {}
+
+  ngOnInit() {
+    this.changeDetectorRef.detectChanges();
+    this.dataSource.paginator = this.paginator as MatPaginator;
+    this.obs = this.dataSource.connect();
+
+    this.paginator!._intl.itemsPerPageLabel =
+      'Кількість елементів на сторінці:';
+  }
+
+  ngOnDestroy() {
+    if (this.dataSource) {
+      this.dataSource.disconnect();
+    }
+  }
 }
