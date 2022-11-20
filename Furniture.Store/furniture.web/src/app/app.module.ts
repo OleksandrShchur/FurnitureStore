@@ -9,6 +9,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,9 +17,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PagedItemListComponent } from './paged-item-list/paged-item-list.component';
 import { FooterComponent } from './footer/footer.component';
+import { LeftSidebarComponent } from './left-sidebar/left-sidebar.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, PagedItemListComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    PagedItemListComponent,
+    FooterComponent,
+    LeftSidebarComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -32,6 +40,7 @@ import { FooterComponent } from './footer/footer.component';
     FormsModule,
     ReactiveFormsModule,
     MatPaginatorModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
