@@ -15,9 +15,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PagedItemListComponent } from './paged-item-list/paged-item-list.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, PagedItemListComponent],
+  declarations: [AppComponent, NavbarComponent, PagedItemListComponent, FooterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
