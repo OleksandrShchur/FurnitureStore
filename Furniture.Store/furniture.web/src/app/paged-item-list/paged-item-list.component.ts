@@ -122,6 +122,108 @@ export class PagedItemListComponent implements OnInit {
       content: 'Content here',
       url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
     },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
+    {
+      title: 'Title',
+      subtitle: 'Subtitle',
+      content: 'Content here',
+      url: 'https://klen.ua/modules/ph_simpleblog/covers/134.jpg',
+    },
   ];
 
   dataSource: MatTableDataSource<ItemInfo> = new MatTableDataSource<ItemInfo>(
@@ -134,9 +236,6 @@ export class PagedItemListComponent implements OnInit {
     this.changeDetectorRef.detectChanges();
     this.dataSource.paginator = this.paginator as MatPaginator;
     this.obs = this.dataSource.connect();
-
-    this.paginator!._intl.itemsPerPageLabel =
-      'Кількість елементів на сторінці:';
   }
 
   ngOnDestroy() {
