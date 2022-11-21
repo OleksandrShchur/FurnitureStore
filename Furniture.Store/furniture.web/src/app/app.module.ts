@@ -10,6 +10,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatTreeModule } from '@angular/material/tree';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -41,6 +43,8 @@ import { LeftSidebarComponent } from './left-sidebar/left-sidebar.component';
     ReactiveFormsModule,
     MatPaginatorModule,
     MatSidenavModule,
+    MatListModule,
+    MatTreeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
